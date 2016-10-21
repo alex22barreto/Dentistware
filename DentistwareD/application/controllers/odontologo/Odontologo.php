@@ -1,6 +1,6 @@
 <?php
 
-class Cliente extends Admin_Controller {
+class Odontologo extends Admin_Controller {
 	
 	function __construct(){
 		parent::__construct();	
@@ -9,7 +9,7 @@ class Cliente extends Admin_Controller {
 		}
 		$this->load->model ( 'persona_model' );
 		
-		$this->data['clientes'] = $this->persona_model->get_clientes();
+		$this->data['odontologos'] = $this->persona_model->get_odontologos();
 
 	}
 	
