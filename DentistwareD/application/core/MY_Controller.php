@@ -34,5 +34,45 @@ class MY_Controller extends CI_Controller{
 }
 
 class Admin_Controller extends MY_Controller{
-	
+	function __construct(){
+        parent::__construct();
+        
+        $tipo = $this->session->userdata('tipo_persona');
+        if ($tipo != 'ADM') {
+       	    redirect ( 'Login', 'refresh' );
+       }            
+    }
+}
+
+class Cliente_Controller extends MY_Controller{
+	function __construct(){
+        parent::__construct();
+        
+        $tipo = $this->session->userdata('tipo_persona');
+        if ($tipo != 'CLT') {
+       	    redirect ( 'Login', 'refresh' );
+       }            
+    }
+}
+
+class Odon_Controller extends MY_Controller{
+	function __construct(){
+        parent::__construct();
+        
+        $tipo = $this->session->userdate('tipo_persona');
+        if ($tipo != 'ODO') {
+       	    redirect ( 'Login', 'refresh' );
+       }            
+    }
+}
+
+class Empl_Controller extends MY_Controller{
+	function __construct(){
+        parent::__construct();
+        
+        $tipo = $this->session->userdata('tipo_persona');
+        if ($tipo != 'EMP') {
+       	    redirect ( 'Login', 'refresh' );
+       }            
+    }
 }
