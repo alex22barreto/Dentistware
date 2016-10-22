@@ -193,11 +193,7 @@
                                             echo ucwords($cliente->eps);
                                             echo '</td>';
                                             echo '<td>';
-<<<<<<< HEAD
-                                            echo $cliente->contacto . '<br>' . $cliente->contacto_tel;
-=======
-                                            echo ucwords($cliente->contacto);
->>>>>>> a078931393b46470b60bf60237462601d4bed078
+                                            echo ucwords($cliente->contacto) . '<br>' . ucwords($cliente->contacto_tel);
                                             echo '</td>';
                                             echo '<td><button><i class="fa fa-pencil"></i></button><button><i class="fa fa-trash"></i></button></td>';
                             			echo '</tr>';   
