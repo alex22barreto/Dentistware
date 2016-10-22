@@ -18,5 +18,5 @@ class Cliente extends Admin_Controller {
 		$this->get_user_menu('main-cliente');
         $this->data['clientes'] = $this->persona_model->get_clientes();
 		$this->render ( 'admin/admin_cliente_view' );				
-	}	
+	}
 }
