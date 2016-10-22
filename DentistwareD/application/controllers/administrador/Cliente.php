@@ -1,6 +1,6 @@
 <?php
 
-class Cliente extends Cliente_Controller {
+class Cliente extends Admin_Controller {
 	
 	function __construct(){
 		parent::__construct();	
@@ -8,13 +8,15 @@ class Cliente extends Cliente_Controller {
 			redirect('Login');
 		}
 		$this->load->model ( 'persona_model' );
+        
 		
-		$this->data['clientes'] = $this->persona_model->get_clientes();
+		
 
 	}
 	
 	public function index(){
 		$this->get_user_menu('main-cliente');
+        $this->data['clientes'] = $this->persona_model->get_clientes();
 		$this->render ( 'admin/admin_cliente_view' );				
 	}	
 }

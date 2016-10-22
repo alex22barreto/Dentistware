@@ -2,7 +2,7 @@
     <!-- Content Header (Page header) -->
     <section class="content-header">
       <h1>
-          Clientes
+          Administradores
       </h1>
     </section>
 
@@ -12,10 +12,10 @@
                 <div class="box">
                     <div class="box-header">
                         <h3 class="box-title">Ver clientes</h3>
-                        <a href="javascript:void(0)" class="btn btn-sm btn-info btn-flat pull-center">Agregar cliente</a>
+                        <a href="javascript:void(0)" class="btn btn-sm btn-info btn-flat pull-center">Agregar administrador</a>
                     </div>
                     <div class="box-body">
-                        <p>En la siguiente tabla encuentra una lista de todas sus citas agendadas actualmente, si desea cancelar una cita, haga click sobre el espacio en blanco de la columna cancelar de las citas y posteriormente presione Cancelar citas.</p><br>
+                        <p>En la siguiente tabla encuentra una lista de todos los administradores,y posteriormente presione Cancelar citas.</p><br>
                     <div class="table-responsive">
                         <table id="tablaCliente" class="table table-bordered table-hover">
                             <thead >
@@ -35,7 +35,7 @@
                             	<?php 
                             	
                             	if($clientes != NULL){
-                            		 		foreach ($clientes as $cliente){
+                            		foreach ($clientes as $cliente){
                             			echo '<tr>';
                                             echo '<td>';
                                             echo $cliente->nombre;

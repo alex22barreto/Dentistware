@@ -2,7 +2,7 @@
     <!-- Content Header (Page header) -->
     <section class="content-header">
       <h1>
-          Clientes
+          Odontologos
       </h1>
     </section>
 
@@ -12,7 +12,7 @@
                 <div class="box">
                     <div class="box-header">
                         <h3 class="box-title">Ver clientes</h3>
-                        <a href="javascript:void(0)" class="btn btn-sm btn-info btn-flat pull-center">Agregar cliente</a>
+                        <a href="javascript:void(0)" class="btn btn-sm btn-info btn-flat pull-center">Agregar odontólogo</a>
                     </div>
                     <div class="box-body">
                         <p>En la siguiente tabla encuentra una lista de todas sus citas agendadas actualmente, si desea cancelar una cita, haga click sobre el espacio en blanco de la columna cancelar de las citas y posteriormente presione Cancelar citas.</p><br>
@@ -61,7 +61,7 @@
                                             echo $cliente->contacto . '<br>' . $cliente->contacto_tel;
                                             echo '</td>';
                                             echo '<td><button><i class="fa fa-pencil"></i></button><button><i class="fa fa-trash"></i></button></td>';
-                            			echo '</tr>';   
+                            			echo '</tr>';  
                             		}
                             	}                            	
                             	?>
