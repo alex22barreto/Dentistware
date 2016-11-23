@@ -60,7 +60,7 @@ class Login extends MY_Controller {
 		if ($user == NULL) {
 			return 4;
 		}
-		if ($user->estado_persona === 'RET') {
+		if ($user->estado_persona === 'DST') {
 			return 1;
 		}
 		if (password_verify($password, $user->clave_acceso)) {

@@ -48,7 +48,7 @@
                             </div>
                         </div>
                         <div class="box-footer">
-                            <button type="button" class="btn btn-danger btn-lg cancelar_edit">Cancelar</button>
+                            <button type="button" class="btn btn-danger btn-lg informacion_salir_btn" onclick='window.close();' >Salir</button>
                         </div>
 	                </div>						   
 	            </div>
